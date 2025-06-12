@@ -1,0 +1,12 @@
+我来解释data文件夹中的processed_data.pkl和model文件夹中的chess_ai_model.pkl的区别：
+processed_data.pkl
+内容：这是预处理后的棋局数据，包含了每一步的走法和对应的棋盘状态。
+用途：用于训练模型，它是从原始的棋局数据（如chess_1.json）中提取并转换而来的，是模型学习的“教材”。
+生成方式：通过数据加载和预处理脚本（如data_loader.py）生成，它将原始数据转换为模型可以使用的格式。
+chess_ai_model.pkl
+内容：这是训练好的模型，包含了模型的参数和结构，这些参数是模型从processed_data.pkl中学习到的。
+用途：用于预测下一步走法，它是模型经过训练后的结果，是AI下棋的“大脑”。
+生成方式：通过训练脚本（如train.py）生成，它使用processed_data.pkl来训练并优化模型。
+简单来说：
+processed_data.pkl是“教材”，供模型学习用。
+chess_ai_model.pkl是“大脑”，是模型学习后的结果，用来做预测。
