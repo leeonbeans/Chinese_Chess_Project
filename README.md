@@ -18,7 +18,7 @@ So when the ai-model and api all abandon the game, the tip---"AI从未看见过�
 
 ## We use Dongping and Fen format across the project.
 
-Dongping format (东萍格式) source *www.dpxq.com* (东萍象棋网), it can describe the current chess situation and movement.
+Dongping format (东萍格式) sources *www.dpxq.com* (东萍象棋网), it can describe the current chess situation and movement.
 
 ###   \*The current chess situation by Dongping format  
 64 numbers, and each 2 numbers stands for one chess.  
